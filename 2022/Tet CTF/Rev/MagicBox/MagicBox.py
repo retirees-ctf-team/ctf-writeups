@@ -37,7 +37,7 @@ while read_word(0) != 0xFFFF:
     if read_word(12) == 1:
         write_word(0, 12)
         write_word(ord(password_Input[input_index]), 10)
-        # print('\ngetChar("%s") -------> mem[0x%x]' % (process_Input[input_index], 10))
+        # print('\ngetChar("%s") -------> mem[0x%x]' % (password_Input[input_index], 10))
         input_index += 1
 
     EAX = read_word(0)
